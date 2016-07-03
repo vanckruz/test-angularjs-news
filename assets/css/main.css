@@ -53,6 +53,12 @@ body{
 	border-radius: 50%;
 	float: left;
 }
+.news_box:nth-child(odd) .circlebox{
+	background: #C7F04B;
+}
+.news_box:nth-child(even) .circlebox{
+	background: #2FC3CB;
+}
 .ptitlenews{
 	margin-top: 1.5em;
 	padding:.3em;
@@ -72,12 +78,6 @@ body{
 	margin-left: 1em;
 	background: #f1f1f1;
 	float: left;
-}
-.circlebox.green{
-	background: #C7F04B;
-}
-.circlebox.blue{
-	background: #2FC3CB;
 }
 .bns{
 	padding: 1em;
