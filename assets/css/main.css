@@ -1,0 +1,24 @@
+body{
+	background: #394C5F;
+}
+.cns{
+	margin-top: 5em;
+	background: #f1f1f1;
+	min-height: 600px;
+	border-radius: 10px 10px 0px 0px;
+}
+.hns{
+	background: #FF6654;
+	padding: 1em;
+	color: #FFF;
+	min-height: 75px;
+	border-radius: 10px 10px 0px 0px;
+	overflow: hidden;
+}
+.hns span{
+	float: left;
+	font-size: 2em;
+}
+.container{
+	cursor: url("../img/search.png"), auto;
+}
