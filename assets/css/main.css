@@ -7,6 +7,11 @@ body{
 	min-height: 600px;
 	border-radius: 10px 10px 0px 0px;
 }
+.container.cns{
+	cursor: url("../img/search.png"), auto;
+	margin-top: 90%;
+	transition: 1s all;
+}
 .hns{
 	background: #FF6654;
 	padding: 1em;
@@ -19,6 +24,31 @@ body{
 	float: left;
 	font-size: 2em;
 }
-.container{
-	cursor: url("../img/search.png"), auto;
+.e_ns{
+	margin-bottom: 1em;
+	padding: 1.2em;	
+	background: #FFF;
+}
+.circlebox{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	float: left;
+}
+.titlens{
+	width: 60%;
+	height: 50px;
+	margin-top: 1em;
+	margin-left: 1em;
+	background: #f1f1f1;
+	float: left;
+}
+.circlebox.green{
+	background: #C7F04B;
+}
+.circlebox.blue{
+	background: #2FC3CB;
+}
+.bns{
+	padding: 1em;
 }
