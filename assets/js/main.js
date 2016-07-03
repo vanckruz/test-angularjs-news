@@ -5,12 +5,14 @@ app.controller("news",function($scope,$http){
 	$scope.news = [];
 
 	$scope.getnews = function(){		
-		$scope.ancho = "0px";
+		$scope.mostrar = false;
 
 		$http.get("../../news_mock.json")
 		.success(function(data){
 			$scope.news = data;
-			$scope.ancho = "100%";
+			$scope.mostrar = true;
+			$scope.animacion = "e_ns_animate";
+
 		})
 		.error(function(){
 

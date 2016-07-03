@@ -1,6 +1,10 @@
 body{
 	background: #394C5F;
 }
+.container.search{
+	background: rgba(255,255,255,0.5);
+	padding: 1em;
+}
 .cns{
 	margin-top: 5em;
 	background: #f1f1f1;
@@ -32,6 +36,8 @@ body{
 	padding: 1.2em;	
 	background: #FFF;
 	transition: 1s all;
+	width: 0px;
+	overflow: hidden;
 }
 .circlebox{
 	width: 70px;
