@@ -26,8 +26,8 @@
 		<div class="col-xs-10 col-xs-offset-1 bns">
 
 			<div ng-repeat="new in news | filter:busqueda" >
-				<div class="e_ns col-xs-12" ng-show="mostrar" ng-click="detallenew($event)">
-					<div class="circlebox green"></div>
+				<div class="e_ns col-xs-12" ng-show="mostrar">
+					<div class="circlebox green" ng-click="detallenew($event)"></div>
 					<div class="titlens">{{new.title}}</div>
 				</div>		
 

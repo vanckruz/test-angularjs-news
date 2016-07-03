@@ -21,11 +21,14 @@ app.controller("news",function($scope,$http){
 	}
 
 	$scope.detallenew = function(event){
-		angular.element(event.target);
-		
-		$(".detallenew").slideToggle();
+		angular.element(event.target);	
 
-		console.log( $(event.target).siblings().attr("class") );
+		$(event.target).parent().siblings().slideToggle().addClass("active");
+
+		$(".detallenew").not(".active").slideUp();
+
+		$(event.target).parent().siblings().removeClass("active");
+
 	}
 	
 });
