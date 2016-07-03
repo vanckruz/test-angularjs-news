@@ -32,11 +32,19 @@ body{
 	color: #C7F04B;
 }
 .e_ns{
+	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1.2em;	
 	background: #FFF;
 	transition: 1s all;
-	width: 0px;
+	overflow: hidden;
+}
+.e_ns:hover{
+	cursor: url("../img/search.png"), auto;	
+}
+.col-xs-12.detallenew{
+	display: none;
+	background: #FFF;
 	overflow: hidden;
 }
 .circlebox{
@@ -44,6 +52,16 @@ body{
 	height: 70px;
 	border-radius: 50%;
 	float: left;
+}
+.ptitlenews{
+	margin-top: 1.5em;
+	padding:.3em;
+	background: #f1f1f1;
+	text-align: justify;
+}
+.pbodynews{
+	margin-top: 1em;
+	text-align: justify;	
 }
 .titlens{
 	width: 60%;

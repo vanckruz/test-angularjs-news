@@ -19,23 +19,35 @@
 	<div class="container cns">
 		<div class="row hns">
 			<div class="col-xs-12">
-				<span class="glyphicon glyphicon-align-justify" ng-click="getnews()"></span>
+				<span class="glyphicon glyphicon-align-justify" ng-click="getnews()" title="Cargar noticias"></span>
 			</div>
 		</div>
 
 		<div class="col-xs-10 col-xs-offset-1 bns">
 
-			<div class="e_ns col-xs-12" ng-repeat="new in news | filter:busqueda" ng-show="mostrar" ng-style="animacion">
-				<div class="circlebox green"></div>
-				<div class="titlens">{{new.title}}</div>
-			</div>		
+			<div ng-repeat="new in news | filter:busqueda" >
+				<div class="e_ns col-xs-12" ng-show="mostrar" ng-click="detallenew($event)">
+					<div class="circlebox green"></div>
+					<div class="titlens">{{new.title}}</div>
+				</div>		
+
+				<div class="col-xs-12 detallenew">
+					<div class="col-lg-4 col-md-4 col-xs-12">
+					 	<img ng-src="{{new.image}}" class="img img-responsive">
+					</div>
+					<div class="col-ld-8 col-md-8 col-xs-12">
+						<p class="ptitlenews">{{new.title}}</p>
+						<p class="pbodynews">{{new.content}}</p>						
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>
 	
 	<script src="assets/js/jquery-2.2.1.min.js"></script>
 	<script src="assets/js/angular.min.js"></script>
-	<script src="assets/js/main.js"></script>
 	<script src="assets/js/efects.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

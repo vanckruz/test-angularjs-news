@@ -11,12 +11,21 @@ app.controller("news",function($scope,$http){
 		.success(function(data){
 			$scope.news = data;
 			$scope.mostrar = true;
-			$scope.animacion = "e_ns_animate";
+			
+			$(".e_ns").show("fast");
 
 		})
 		.error(function(){
 
 		});
+	}
+
+	$scope.detallenew = function(event){
+		angular.element(event.target);
+		
+		$(".detallenew").slideToggle();
+
+		console.log( $(event.target).siblings().attr("class") );
 	}
 	
 });
