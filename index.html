@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head ng-app="jhonnynews">
+<html lang="en" ng-app="jhonnynews">
+<head>
 	<meta charset="UTF-8">
 	<title>Jhonny Vasquez</title>
 	<link rel="stylesheet" href="assets/css/vendor/bootstrap/css/bootstrap.min.css">
@@ -8,22 +8,20 @@
 </head>
 <body>
 
-	<div class="container cns">
+	<div class="container cns" ng-controller="news">
 		<div class="row hns">
 			<div class="col-xs-12">
-				<span class="glyphicon glyphicon-align-justify"></span>
+				<span class="glyphicon glyphicon-align-justify" ng-click="getnews()"></span>
 			</div>
 		</div>
 
 		<div class="col-xs-10 col-xs-offset-1 bns">
-			<div class="e_ns col-xs-12">
+
+			<div class="e_ns col-xs-12" ng-repeat="new in news" style="width:{{ancho}}">
 				<div class="circlebox green"></div>
-				<div class="titlens"></div>
-			</div>
-			<div class="e_ns col-xs-12">
-				<div class="circlebox blue"></div>
-				<div class="titlens"></div>
-			</div>			
+				<div class="titlens">{{new.title}}</div>
+			</div>		
+
 		</div>
 	</div>
 	
