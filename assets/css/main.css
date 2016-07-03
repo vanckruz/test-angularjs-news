@@ -32,12 +32,15 @@ body{
 	color: #C7F04B;
 }
 .e_ns{
+	width: 0px;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1.2em;	
 	background: #FFF;
 	transition: 1s all;
 	overflow: hidden;
+	clear: both;
+	transition: 2s all;
 }
 .e_ns:hover{
 	cursor: url("../img/search.png"), auto;	
@@ -78,6 +81,15 @@ body{
 	margin-left: 1em;
 	background: #f1f1f1;
 	float: left;
+}
+.title_general{
+	width: 60%;
+	height: 35px;
+	padding:.8em;
+	overflow: hidden;
+	color: #001;
+	background: rgba(255,255,255,0.5);
+	display: none;
 }
 .bns{
 	padding: 1em;

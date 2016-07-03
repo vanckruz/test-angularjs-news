@@ -18,15 +18,18 @@
 
 	<div class="container cns">
 		<div class="row hns">
-			<div class="col-xs-12">
+			<div class="col-xs-1">
 				<span class="glyphicon glyphicon-align-justify" ng-click="getnews()" title="Cargar noticias"></span>
+			</div>
+			<div class="col-xs-11">
+				<div class="title_general"></div>
 			</div>
 		</div>
 
 		<div class="col-xs-10 col-xs-offset-1 bns">
 
 			<div ng-repeat="new in news | filter:busqueda" class="news_box">
-				<div class="e_ns col-xs-12" ng-show="mostrar">
+				<div class="e_ns col-xs-12" ng-show="mostrar" ng-style="width">
 					<div class="circlebox green" ng-click="detallenew($event)"></div>
 					<div class="titlens">{{new.title}}</div>
 				</div>		

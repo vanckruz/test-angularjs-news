@@ -4,16 +4,16 @@ app.controller("news",function($scope,$http){
 
 	$scope.news = [];
 
-	$scope.getnews = function(){		
+	$scope.getnews = function(){	
+		$(".title_general").hide()	
+
 		$scope.mostrar = false;
 
-		$http.get("../../news_mock.json")
+		$http.get("news_mock.json")
 		.success(function(data){
 			$scope.news = data;
-			$scope.mostrar = true;
-			
-			$(".e_ns").show("fast");
-
+			$scope.mostrar = true;						
+			$scope.width = {"width" : "100%"};
 		})
 		.error(function(){
 
@@ -22,6 +22,8 @@ app.controller("news",function($scope,$http){
 
 	$scope.detallenew = function(event){
 		angular.element(event.target);	
+
+		$(".title_general").hide().show("fast").html($(event.target).siblings(".titlens").text());
 
 		$(event.target).parent().siblings().slideToggle().addClass("active");
 
